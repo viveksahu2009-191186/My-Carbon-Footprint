@@ -1,0 +1,7 @@
+{
+  "name": "My carbon footprint",
+  "description": "An AI-powered application to track, analyze, and reduce your personal carbon footprint through natural language activity logging and personalized ecological recommendations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
