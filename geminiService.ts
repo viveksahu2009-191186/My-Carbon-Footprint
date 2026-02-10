@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { ActivityCategory, ActivityLog, Recommendation } from "./types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 export async function analyzeActivity(description: string): Promise<Partial<ActivityLog>> {
   const response = await ai.models.generateContent({
